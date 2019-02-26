@@ -4,7 +4,7 @@ import Square from "./square"
 
 export default function() {
     return (
-        <div>
+        <div className="square-line">
             <Square />
             <Square />
             <Square />
