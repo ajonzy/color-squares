@@ -5,10 +5,16 @@ export default class extends Component {
         super(props)
 
         this.state = {
-            color: "#000000"
-        }
+            color: props.color
+        };
 
         this.handleColorChange = this.handleColorChange.bind(this)
+    }
+
+    componentWillReceiveProps(props) {
+        this.setState({
+            color: props.color
+        })
     }
 
     randomColorGenerator() {

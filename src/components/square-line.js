@@ -2,19 +2,19 @@ import React from 'react'
 
 import Square from "./square"
 
-export default function() {
+export default function(props) {
     return (
         <div className="square-line">
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
-            <Square />
+            <Square color={props.color}/>
+            <Square color={props.color}/>
+            <Square color={props.color}/>
+            <Square color={props.color}/>
+            <Square color={props.color}/>
+            <Square color={props.color}/>
+            <Square color={props.color}/>
+            <Square color={props.color}/>
+            <Square color={props.color}/>
+            <Square color={props.color}/>
         </div>
     )
 }
