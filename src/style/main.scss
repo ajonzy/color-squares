@@ -3,9 +3,13 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    background-color: rgb(21, 22, 22);
-    .square {
-        height: 10vh;
-        width: 10vh;
+    background-color: rgb(28, 29, 29);
+    .squares {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        .square {
+            height: 10vh;
+            width: 10vh;
+        }
     }
 }
