@@ -30,9 +30,11 @@ export default class App extends Component {
   render() {
       return (
         <div className='app' onClick={this.handleReset}>
+          <h3>Hover Over Center<br/>To Begin</h3>
           <div className="squares">
             {this.createSquares()}
           </div>
+          <h3>Click Anywhere<br/>To Reset</h3>
         </div>
       )
   }

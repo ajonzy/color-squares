@@ -2,8 +2,16 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     background-color: rgb(28, 29, 29);
+    h3 {
+        width: 210px;
+        color: gold;
+        text-align: center;
+        font-family: 'VT323', monospace;
+        font-size: 2.5em;
+    }
     .squares {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
