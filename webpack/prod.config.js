@@ -1,4 +1,5 @@
 const path = require('path');
+const sass = require('sass');
 const webpackMerge = require('webpack-merge');
 const autoprefixer = require('autoprefixer');
 const webpackCommon = require('./common.config');
@@ -59,7 +60,10 @@ module.exports = webpackMerge(webpackCommon, {
             {
               loader: 'sass-loader',
               options: {
-                outputStyle: 'expanded',
+                implementation: sass,
+                sassOptions: {
+                  outputStyle: 'expanded'
+                },
                 sourceMap: true,
                 sourceMapContents: true
               }

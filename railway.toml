@@ -1,0 +1,9 @@
+# Railway config-as-code: overrides dashboard for each deployment.
+# https://docs.railway.com/reference/config-as-code
+
+[build]
+buildCommand = "npm ci && NODE_OPTIONS=--openssl-legacy-provider npm run build"
+
+[deploy]
+startCommand = "node server.js"
+restartPolicyType = "ON_FAILURE"

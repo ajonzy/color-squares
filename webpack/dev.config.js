@@ -2,6 +2,8 @@ const path = require('path');
 const webpackMerge = require('webpack-merge');
 const webpackCommon = require('./common.config');
 
+const sass = require('sass');
+
 const env = require('../env');
 const proxyRules = require('../proxy/rules');
 
@@ -46,7 +48,10 @@ module.exports = webpackMerge(webpackCommon, {
           {
             loader: 'sass-loader',
             options: {
-              outputStyle: 'expanded',
+              implementation: sass,
+              sassOptions: {
+                outputStyle: 'expanded'
+              },
               sourceMap: true,
               sourceMapContents: true
             }
